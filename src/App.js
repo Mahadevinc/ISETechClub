@@ -36,15 +36,19 @@ function App() {
             <Nav.Link eventKey="6" as={Link} to="/events">
               Events
             </Nav.Link>
+            {/*
             <Nav.Link eventKey="1" as={Link} to="/blogs">
               Blogs
             </Nav.Link>
+            */}
             <Nav.Link eventKey="2" as={Link} to="/programming">
               Programming
             </Nav.Link>
+            {/* 
             <Nav.Link eventKey="3" as={Link} to="/result">
-              Result
+              Result 
             </Nav.Link>
+            */}
             <Nav.Link eventKey="4" as={Link} to="/team">
               Team
             </Nav.Link>
@@ -52,8 +56,8 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <Route exact path="/" component={Home} />
-      <Route path="/notes" 
-        render={(props) => <Notes details={notes_data} {...props} />}      
+      <Route path="/notes"
+        render={(props) => <Notes details={notes_data} {...props} />}
       />
       <Route path="/programming" component={Programming} />
       <Route path="/result" component={Result} />
